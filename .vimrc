@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " auto pair
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
 " Surround plugin
 Plugin 'tpope/vim-surround' 
 " Hardmode vim plugin
@@ -37,6 +37,8 @@ let g:HardMode_level = 'wannabe'
 let g:HardMode_hardmodeMsg = 'Don''t use this!'
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
+" https://www.reddit.com/r/vim/comments/jicnfd/shifto_is_too_slow/
+set ttimeoutlen=10
 " Show current line number
 set number
 
@@ -153,4 +155,3 @@ set t_Co=256
 " set background=light
 " colorscheme solarized
 " let g:solarized_termcolors=256
-
